@@ -47,3 +47,8 @@ To fix this problem, the model will be used to generate top N flairs for the new
 |MEGATHREAD|MEGATHREAD|Model select MEGATHREAD as a predicted result|
 
 Using this approach, percentage of relevant suggestion will go up to almost 80%, which should be enough for the problem.
+
+### Limitations
+* The model is trained on only one subreddit, it will not work with the other subreddit. To create model for another subreddit, we may have to process the data from other subreddit differently.
+* The model will perform worse on tag (flair) with many off-topic posts.
+* To maintain the performance of tag suggestion, the model need to be retrain periodically as posts in subreddit should be continuously growing with a little bit different of language used. 
