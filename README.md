@@ -34,6 +34,8 @@ However, these two flairs will not be included in the model, as another method c
 ## Conclusion
 After experimenting with various text processing and algorithms, the final model prediction accuracy is about 50% with most errors on "Configuration", "Discussion", "Question" and "Tech Support".
 
+![Confusion Matrix](image/final_model_3.png)
+
 These flairs are difficult to be separated, even with human decision as the posts in these topics are sometimes very similar to each other.
 Furthermore, some topics have many posts that are off-topic, for example, "Meme / Shitpost" and "Hot Wasabi" results in quite underperformed model.
 
